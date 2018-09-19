@@ -7,9 +7,8 @@ class Main {
         int[] list = IntStream.rangeClosed(1, 9).toArray();
         
         System.out.print("      ");
-        for(int i : list){
-            System.out.print(i + "  ");
-        }
+        IntStream.range(1,10)
+                 .forEach(i->System.out.print(i + "  "));
         System.out.println();
         System.out.println("  -----------------------------");
         
@@ -26,4 +25,3 @@ class Main {
     }
 }
 
- 
