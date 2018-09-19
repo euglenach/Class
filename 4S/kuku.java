@@ -5,9 +5,7 @@ import java.io.*;
 
 class Main {
     public static void main(String args[ ]) {
-        
-        int[] list = IntStream.rangeClosed(1, 9).toArray();
-        
+               
         System.out.print("      ");
         IntStream.range(1,10)
                  .forEach(i->System.out.print(i + "  "));
