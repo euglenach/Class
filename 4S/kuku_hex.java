@@ -11,8 +11,6 @@ class Main {
         System.out.println();
         System.out.println("  -----------------------------");
 
-
-
         IntStream.range(1, 10)
                 .forEach(x -> {
                     IntStream.range(0,10).forEach(y ->{
