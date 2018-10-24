@@ -11,8 +11,8 @@ import java.io.*;
 public class SetGradeSample {
     public static void main(String[] args) {
         CitStudent koudai = new CitStudent();
-        koudai.no = 1732118;
-        koudai.name = "hakozaki";
+        koudai.no = 1732999;
+        koudai.name = "kodai";
         koudai.year = 2;
         koudai.grade = 79;
         koudai.department = 1;
