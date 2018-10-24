@@ -1,12 +1,7 @@
 package com.company;
-import java.awt.geom.Area;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.*;
 import java.lang.*;
-import java.io.*;
 
 public class SetGradeSample {
     public static void main(String[] args) {
