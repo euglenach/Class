@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        for (var i:args) {
+            if(i.contains(args[0])){
+                System.out.println(i);
+            }
+        }
+    }
+}
