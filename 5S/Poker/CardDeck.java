@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class CardDeck {
     private List<Integer> cards = new ArrayList<>();
 
     public CardDeck(){
-        for (var item:IntStream.range(1,53).toArray()) {
-            cards.add(item);
-        }
+        cards = IntStream.range(1,53).boxed().collect(Collectors.toList());
     }
 
     public void printCards(){

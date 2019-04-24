@@ -16,6 +16,6 @@ public class CardUtility {
         return numbers[n % 13];
     }
     public static String convertNum2Suit(int n){
-        return suits[n / 14];
+        return suits[(n + (n/14))  / 14];
     }
 }
