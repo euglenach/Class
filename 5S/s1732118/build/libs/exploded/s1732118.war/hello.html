@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+こんにちは！
+<hr>
+<a href="https://www.it-chiba.ac.jp/">千葉工業大学ホームページ</a>
+<hr>
+<img src="Asset/cards/1.png" , title="スペードA">
+<img src="Asset/cards/18.png" , title="ハート5">
+<img src="Asset/cards/37.png" , title="ダイヤJ">
+<img src="Asset/cards/52.png" , title="クラブK">
+<hr>
+<script>
+    document.write("<table border='1'>");
+    [...Array(9).keys()].map(i => ++i).forEach(x =>{
+        document.write("<tr>");
+        [...Array(9).keys()].map(j => ++j).forEach(y =>{
+            document.write("<td>",x*y,"</td>");
+        });
+        document.write("</tr>");
+    });
+    document.write("</table>");
+</script>
+<hr>
+<form>
+    <p>名前</p><br><input type="text">
+    <p>学番<br></p><input type="text">
+    <p>学年<br></p><input type="radio" name = "year">1
+    <input type="radio" name = "year">2
+    <input type="radio" name = "year">3
+    <input type="radio" name = "year">4
+    <p>興味のあるプログラミング言語<br></p>
+    <input type="checkbox" name="language">C
+    <input type="checkbox" name="language">Java
+    <input type="checkbox" name="language">HTML
+    <input type="checkbox" name="language">その他
+</form>
+<hr>
+<script>
+    const roles = [
+        {
+            name:"ストレートフラッシュ",
+            imgs:[23, 22, 21, 20, 19]
+        },
+        {
+            name:"フォーカード",
+            imgs:[11, 24, 37, 50, 'c1']
+        },
+        {
+            name:"フルハウス",
+            imgs: [1, 14, 15, 28, 41]
+        },
+        {
+            name: "フラッシュ",
+            imgs: [1, 3, 5, 7, 8]
+        },
+        {
+            name: "ストレート",
+            imgs: [1, 15, 29, 30, 44]
+        },
+        {
+            name: "スリーカード",
+            imgs: [15, 28, 41]
+        },
+        {
+            name: "ツーペア",
+            imgs: [1, 14, 32, 45]
+        },
+        {
+            name: "ワンペア",
+            imgs: [1, 14]
+        },
+        {
+            name: "ハイカード",
+            imgs: [1, 23, 34, 43, 52]
+        }
+    ]
+
+    document.write("<table border='1'>")
+    document.write("<tr>")
+    document.write("<th>","役名","</th>")
+    document.write("<th colspan='5'>","例","</th>")
+    document.write("</tr>")
+    for (var item of roles){
+        document.write("<tr>")
+        document.write("<td>",item.name,"</td>")
+        for (var x of item.imgs){
+            const img = "Asset/cards/" + x + ".png"
+            console.log(img)
+            document.write("<td>",`<img id="card" src="${img}">`,"</td>")
+        }
+        document.write("</tr>")
+    }
+
+    document.write("</table>")
+</script>
+</body>
+</html>

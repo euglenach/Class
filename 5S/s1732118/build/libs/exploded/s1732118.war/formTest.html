@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>フォーム処理</title>
+</head>
+<body>
+<form action="/FormTest" method="POST">
+
+    <div>氏名：<input type="text" name="name" value="工大太郎"></div>
+
+    <div>年齢：<input type="text" name="age" value="21"></div>
+
+    <div>学年：
+        1<input type="radio" name="year" value="1">
+        2<input type="radio" name="year" value="2">
+        3<input type="radio" name="year" value="3" checked>
+        4<input type="radio" name="year" value="4">
+    </div>
+
+    <div>
+        性別：
+        男<input type="radio" name="gender" value="男" checked>
+        女<input type="radio" name="gender" value="女"><br>
+    </div>
+
+    <div>
+        血液型：
+        <select name="blood">
+            <option value="A">A型</option>
+            <option value="B">B型</option>
+            <option value="O">O型</option>
+            <option value="AB">AB型</option>
+        </select>
+    </div>
+
+    <input type="submit" value="送信">
+</form>
+<hr>
+</body>
+</html>
